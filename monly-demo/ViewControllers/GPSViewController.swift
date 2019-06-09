@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SensingKit
 import MapKit
 import CoreLocation
 
@@ -16,7 +17,6 @@ class GPSViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView! {
         didSet {
             self.mapView.showsUserLocation = true
-            self.mapView.delegate = self
         }
     }
     @IBOutlet weak var locationButton: UIButton! {
@@ -26,47 +26,38 @@ class GPSViewController: UIViewController {
     }
     
     // MARK: - Properties
-    private let locationManager = CLLocationManager()
+    private let sensingKit = SensingKitLib.shared()
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "GPS"
+    }
+    
+    // MARK: -
+    private func getLocation() {
+        try? self.sensingKit.stopContinuousSensingWithAllRegisteredSensors()
         
-        //
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestAlwaysAuthorization() //.requestWhenInUseAuthorization() //.requestAlwaysAuthorization()
-        self.locationManager.delegate = self
+        if self.sensingKit.isSensorAvailable(SKSensorType.Location) {
+            
+            try? self.sensingKit.register(SKSensorType.Location)
+            try? self.sensingKit.subscribe(to: SKSensorType.Location, withHandler: { (sensorType, sensorData, error) in
+                
+                if let sensorData = sensorData as? SKLocationData {
+                    print("location: \(sensorData)")
+                    self.mapView.setCenter(sensorData.location.coordinate, animated: true)
+                }
+                try? self.sensingKit.deregister(SKSensorType.Location)
+            })
+            
+            try? self.sensingKit.startContinuousSensing(with: SKSensorType.Location)
+            
+        }
     }
     
     // MARK: - Action methods
     @IBAction func locationButtonDidClicked(_ sender: Any) {
-        guard CLLocationManager.locationServicesEnabled() == true else {
-            // TODO: alert
-            print("alert")
-            return
-        }
-        
-        self.locationManager.startUpdatingLocation()
-    }
-    
-}
-
-extension GPSViewController: CLLocationManagerDelegate {
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let coordinate = locations.last?.coordinate else {
-            // TODO: alert
-            print("alert")
-            return
-        }
-        self.mapView.setCenter(coordinate, animated: true)
-    }
-}
-
-extension GPSViewController: MKMapViewDelegate {
-    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        mapView.setCenter(userLocation.coordinate, animated: true)
+        self.getLocation()
     }
 }

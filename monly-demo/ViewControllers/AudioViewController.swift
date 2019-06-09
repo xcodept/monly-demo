@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AudioViewController: UIViewController {
 
+    // MARK: - Properties
+    private var audioPlayer: AVAudioPlayer?
+    
     // MARK: - Outlets
     @IBOutlet weak var wavButton: UIButton! {
         didSet {
@@ -30,15 +34,33 @@ class AudioViewController: UIViewController {
         self.title = "Audio"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Methods
+    private func playWav() {
+        if let fileURL = Bundle.main.path(forResource: "audio-demo-wav", ofType: "wav") {
+            self.audioPlayer = try? AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+            self.audioPlayer?.play()
+        } else {
+            print("No file with specified name exists")
+        }
     }
-    */
+    
+    private func playMp3() {
+        if let fileURL = Bundle.main.path(forResource: "audio-demo-mp", ofType: "mp3") {
+            self.audioPlayer = try? AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+            self.audioPlayer?.play()
+        } else {
+            print("No file with specified name exists")
+        }
+    }
+    
+    // MARK: - Action methods
+    @IBAction func wavButtonDidClicked(_ sender: Any) {
+        self.playWav()
+    }
+    
+    @IBAction func mp3ButtonDidClicked(_ sender: Any) {
+        self.playMp3()
+    }
+    
 
 }

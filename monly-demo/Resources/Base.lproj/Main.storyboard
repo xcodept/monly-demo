@@ -346,9 +346,43 @@
                     <view key="view" contentMode="scaleToFill" id="VTP-ga-OFz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A1S-kV-LTp">
+                                <rect key="frame" x="64" y="389.66666666666669" width="247" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm5-6W-RLP" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="0.0" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="microphoneButtonDidClicked:" destination="pZE-Dc-no7" eventType="touchUpInside" id="W5Q-8h-dYX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A1S-kV-LTp" firstAttribute="centerY" secondItem="VTP-ga-OFz" secondAttribute="centerY" id="GTC-zr-nzg"/>
+                            <constraint firstItem="A1S-kV-LTp" firstAttribute="leading" secondItem="YAe-pM-Auv" secondAttribute="leading" constant="64" id="KNy-aB-yDh"/>
+                            <constraint firstItem="YAe-pM-Auv" firstAttribute="trailing" secondItem="A1S-kV-LTp" secondAttribute="trailing" constant="64" id="Y8G-dL-Kzs"/>
+                            <constraint firstItem="A1S-kV-LTp" firstAttribute="centerX" secondItem="VTP-ga-OFz" secondAttribute="centerX" id="z8C-m2-qjA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YAe-pM-Auv"/>
                     </view>
+                    <connections>
+                        <outlet property="microphoneButton" destination="Wm5-6W-RLP" id="Rc5-R6-6m5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woS-cv-B9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
