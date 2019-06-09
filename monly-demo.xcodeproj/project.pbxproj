@@ -7,21 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A49BF8422AD240C0037F9B7 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8122AD240C0037F9B7 /* StoryboardSegues.swift */; };
+		0A49BF8522AD240C0037F9B7 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8222AD240C0037F9B7 /* Assets.swift */; };
+		0A49BF8622AD240C0037F9B7 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8322AD240C0037F9B7 /* StoryboardScenes.swift */; };
+		0A49BF8822AD29850037F9B7 /* 3DTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8722AD29850037F9B7 /* 3DTouchViewController.swift */; };
+		0A49BF8A22AD298E0037F9B7 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8922AD298E0037F9B7 /* AudioViewController.swift */; };
+		0A49BF8C22AD29980037F9B7 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8B22AD29980037F9B7 /* BluetoothViewController.swift */; };
+		0A49BF8E22AD299F0037F9B7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8D22AD299F0037F9B7 /* CameraViewController.swift */; };
+		0A49BF9022AD29AC0037F9B7 /* FaceIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8F22AD29AC0037F9B7 /* FaceIdViewController.swift */; };
+		0A49BF9222AD29B40037F9B7 /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9122AD29B40037F9B7 /* GPSViewController.swift */; };
+		0A49BF9422AD29BB0037F9B7 /* GSMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9322AD29BB0037F9B7 /* GSMViewController.swift */; };
+		0A49BF9622AD29C30037F9B7 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9522AD29C30037F9B7 /* GalleryViewController.swift */; };
+		0A49BF9822AD29CA0037F9B7 /* MicrophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9722AD29CA0037F9B7 /* MicrophoneViewController.swift */; };
+		0A49BF9A22AD29D40037F9B7 /* NetworkTrafficViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9922AD29D40037F9B7 /* NetworkTrafficViewController.swift */; };
+		0A49BF9C22AD29DD0037F9B7 /* SensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9B22AD29DD0037F9B7 /* SensorsViewController.swift */; };
+		0A49BF9E22AD29E90037F9B7 /* WifiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9D22AD29E90037F9B7 /* WifiViewController.swift */; };
 		0A65104022AC44B700DC68BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65103F22AC44B700DC68BA /* AppDelegate.swift */; };
-		0A65104222AC44B700DC68BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65104122AC44B700DC68BA /* ViewController.swift */; };
 		0A65104522AC44B700DC68BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A65104322AC44B700DC68BA /* Main.storyboard */; };
 		0A65104722AC44B900DC68BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A65104622AC44B900DC68BA /* Assets.xcassets */; };
 		0A65104A22AC44B900DC68BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A65104822AC44B900DC68BA /* LaunchScreen.storyboard */; };
+		0A65105522AC483A00DC68BA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65105422AC483A00DC68BA /* MenuViewController.swift */; };
+		0A65105922AC4A7F00DC68BA /* SideMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65105722AC4A7F00DC68BA /* SideMenuDataSource.swift */; };
+		0A65105C22AC4BA100DC68BA /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65105B22AC4BA100DC68BA /* MenuItem.swift */; };
+		0A65106722AC4CA000DC68BA /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65106522AC4CA000DC68BA /* MenuItemTableViewCell.swift */; };
+		0A65106822AC4CA000DC68BA /* MenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A65106622AC4CA000DC68BA /* MenuItemTableViewCell.xib */; };
+		9F3E1BA2320EC77FFDB9CC80 /* Pods_monly_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6902BEB7ED9FF2FBD975ABB1 /* Pods_monly_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A49BF8122AD240C0037F9B7 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
+		0A49BF8222AD240C0037F9B7 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		0A49BF8322AD240C0037F9B7 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		0A49BF8722AD29850037F9B7 /* 3DTouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DTouchViewController.swift; sourceTree = "<group>"; };
+		0A49BF8922AD298E0037F9B7 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		0A49BF8B22AD29980037F9B7 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		0A49BF8D22AD299F0037F9B7 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		0A49BF8F22AD29AC0037F9B7 /* FaceIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdViewController.swift; sourceTree = "<group>"; };
+		0A49BF9122AD29B40037F9B7 /* GPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSViewController.swift; sourceTree = "<group>"; };
+		0A49BF9322AD29BB0037F9B7 /* GSMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSMViewController.swift; sourceTree = "<group>"; };
+		0A49BF9522AD29C30037F9B7 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		0A49BF9722AD29CA0037F9B7 /* MicrophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneViewController.swift; sourceTree = "<group>"; };
+		0A49BF9922AD29D40037F9B7 /* NetworkTrafficViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTrafficViewController.swift; sourceTree = "<group>"; };
+		0A49BF9B22AD29DD0037F9B7 /* SensorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsViewController.swift; sourceTree = "<group>"; };
+		0A49BF9D22AD29E90037F9B7 /* WifiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiViewController.swift; sourceTree = "<group>"; };
 		0A65103C22AC44B700DC68BA /* monly-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "monly-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A65103F22AC44B700DC68BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A65104122AC44B700DC68BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A65104422AC44B700DC68BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A65104622AC44B900DC68BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A65104922AC44B900DC68BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A65104B22AC44B900DC68BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A65105422AC483A00DC68BA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0A65105722AC4A7F00DC68BA /* SideMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuDataSource.swift; sourceTree = "<group>"; };
+		0A65105B22AC4BA100DC68BA /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		0A65106522AC4CA000DC68BA /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		0A65106622AC4CA000DC68BA /* MenuItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemTableViewCell.xib; sourceTree = "<group>"; };
+		1F517B327F6B0AC90F6AA3B8 /* Pods-monly-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-monly-demo.release.xcconfig"; path = "Target Support Files/Pods-monly-demo/Pods-monly-demo.release.xcconfig"; sourceTree = "<group>"; };
+		6902BEB7ED9FF2FBD975ABB1 /* Pods_monly_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_monly_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5E5179134BE57DA731C723 /* Pods-monly-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-monly-demo.debug.xcconfig"; path = "Target Support Files/Pods-monly-demo/Pods-monly-demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +71,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3E1BA2320EC77FFDB9CC80 /* Pods_monly_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A49BF8022AD23F00037F9B7 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				0A49BF8222AD240C0037F9B7 /* Assets.swift */,
+				0A49BF8322AD240C0037F9B7 /* StoryboardScenes.swift */,
+				0A49BF8122AD240C0037F9B7 /* StoryboardSegues.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		0A65103322AC44B700DC68BA = {
 			isa = PBXGroup;
 			children = (
 				0A65103E22AC44B700DC68BA /* monly-demo */,
 				0A65103D22AC44B700DC68BA /* Products */,
+				2A515140743C09C45096D5B7 /* Pods */,
+				D85DED01D7ADDCDEFF0724EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +109,144 @@
 		0A65103E22AC44B700DC68BA /* monly-demo */ = {
 			isa = PBXGroup;
 			children = (
-				0A65103F22AC44B700DC68BA /* AppDelegate.swift */,
-				0A65104122AC44B700DC68BA /* ViewController.swift */,
+				0A65105222AC46E500DC68BA /* App */,
+				0A65105E22AC4C2000DC68BA /* Cells */,
+				0A65105F22AC4C2800DC68BA /* Externals */,
+				0A65106022AC4C2F00DC68BA /* Extensions */,
+				0A65106122AC4C3400DC68BA /* Helpers */,
+				0A65106222AC4C4300DC68BA /* Managers */,
+				0A65105D22AC4BA500DC68BA /* Models */,
+				0A65105122AC46D700DC68BA /* Resources */,
+				0A65106322AC4C5100DC68BA /* Services */,
+				0A65106422AC4C6000DC68BA /* Views */,
+				0A65105322AC46FB00DC68BA /* ViewControllers */,
+			);
+			path = "monly-demo";
+			sourceTree = "<group>";
+		};
+		0A65105122AC46D700DC68BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A49BF8022AD23F00037F9B7 /* Generated */,
 				0A65104322AC44B700DC68BA /* Main.storyboard */,
 				0A65104622AC44B900DC68BA /* Assets.xcassets */,
 				0A65104822AC44B900DC68BA /* LaunchScreen.storyboard */,
-				0A65104B22AC44B900DC68BA /* Info.plist */,
 			);
-			path = "monly-demo";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A65105222AC46E500DC68BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A65104B22AC44B900DC68BA /* Info.plist */,
+				0A65103F22AC44B700DC68BA /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0A65105322AC46FB00DC68BA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A65105622AC4A7F00DC68BA /* DataSources */,
+				0A65105422AC483A00DC68BA /* MenuViewController.swift */,
+				0A49BF8722AD29850037F9B7 /* 3DTouchViewController.swift */,
+				0A49BF8922AD298E0037F9B7 /* AudioViewController.swift */,
+				0A49BF8B22AD29980037F9B7 /* BluetoothViewController.swift */,
+				0A49BF8D22AD299F0037F9B7 /* CameraViewController.swift */,
+				0A49BF8F22AD29AC0037F9B7 /* FaceIdViewController.swift */,
+				0A49BF9122AD29B40037F9B7 /* GPSViewController.swift */,
+				0A49BF9322AD29BB0037F9B7 /* GSMViewController.swift */,
+				0A49BF9522AD29C30037F9B7 /* GalleryViewController.swift */,
+				0A49BF9722AD29CA0037F9B7 /* MicrophoneViewController.swift */,
+				0A49BF9922AD29D40037F9B7 /* NetworkTrafficViewController.swift */,
+				0A49BF9B22AD29DD0037F9B7 /* SensorsViewController.swift */,
+				0A49BF9D22AD29E90037F9B7 /* WifiViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A65105622AC4A7F00DC68BA /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				0A65105722AC4A7F00DC68BA /* SideMenuDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		0A65105D22AC4BA500DC68BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A65105B22AC4BA100DC68BA /* MenuItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A65105E22AC4C2000DC68BA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0A65106522AC4CA000DC68BA /* MenuItemTableViewCell.swift */,
+				0A65106622AC4CA000DC68BA /* MenuItemTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0A65105F22AC4C2800DC68BA /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		0A65106022AC4C2F00DC68BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A65106122AC4C3400DC68BA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A65106222AC4C4300DC68BA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0A65106322AC4C5100DC68BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0A65106422AC4C6000DC68BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A515140743C09C45096D5B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F5E5179134BE57DA731C723 /* Pods-monly-demo.debug.xcconfig */,
+				1F517B327F6B0AC90F6AA3B8 /* Pods-monly-demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D85DED01D7ADDCDEFF0724EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6902BEB7ED9FF2FBD975ABB1 /* Pods_monly_demo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A65104E22AC44B900DC68BA /* Build configuration list for PBXNativeTarget "monly-demo" */;
 			buildPhases = (
+				C84B9AD3F6A2DBC5C4BEED95 /* [CP] Check Pods Manifest.lock */,
 				0A65103822AC44B700DC68BA /* Sources */,
 				0A65103922AC44B700DC68BA /* Frameworks */,
 				0A65103A22AC44B700DC68BA /* Resources */,
+				F06267F00F5F5D76AA83F314 /* [CP] Embed Pods Frameworks */,
+				0A49BF7F22AD23480037F9B7 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -96,6 +284,7 @@
 				TargetAttributes = {
 					0A65103B22AC44B700DC68BA = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -123,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A65104A22AC44B900DC68BA /* LaunchScreen.storyboard in Resources */,
+				0A65106822AC4CA000DC68BA /* MenuItemTableViewCell.xib in Resources */,
 				0A65104722AC44B900DC68BA /* Assets.xcassets in Resources */,
 				0A65104522AC44B700DC68BA /* Main.storyboard in Resources */,
 			);
@@ -130,13 +320,98 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A49BF7F22AD23480037F9B7 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/SwiftGen/bin/swiftgen\"\n";
+		};
+		C84B9AD3F6A2DBC5C4BEED95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-monly-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F06267F00F5F5D76AA83F314 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-monly-demo/Pods-monly-demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-monly-demo/Pods-monly-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A65103822AC44B700DC68BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A65104222AC44B700DC68BA /* ViewController.swift in Sources */,
+				0A49BF9822AD29CA0037F9B7 /* MicrophoneViewController.swift in Sources */,
+				0A49BF9022AD29AC0037F9B7 /* FaceIdViewController.swift in Sources */,
+				0A49BF9622AD29C30037F9B7 /* GalleryViewController.swift in Sources */,
+				0A49BF9A22AD29D40037F9B7 /* NetworkTrafficViewController.swift in Sources */,
+				0A49BF9222AD29B40037F9B7 /* GPSViewController.swift in Sources */,
+				0A49BF8422AD240C0037F9B7 /* StoryboardSegues.swift in Sources */,
+				0A49BF9C22AD29DD0037F9B7 /* SensorsViewController.swift in Sources */,
+				0A65105922AC4A7F00DC68BA /* SideMenuDataSource.swift in Sources */,
+				0A49BF8622AD240C0037F9B7 /* StoryboardScenes.swift in Sources */,
+				0A49BF8522AD240C0037F9B7 /* Assets.swift in Sources */,
+				0A49BF9E22AD29E90037F9B7 /* WifiViewController.swift in Sources */,
+				0A49BF8E22AD299F0037F9B7 /* CameraViewController.swift in Sources */,
+				0A49BF9422AD29BB0037F9B7 /* GSMViewController.swift in Sources */,
+				0A49BF8822AD29850037F9B7 /* 3DTouchViewController.swift in Sources */,
+				0A65105522AC483A00DC68BA /* MenuViewController.swift in Sources */,
+				0A65106722AC4CA000DC68BA /* MenuItemTableViewCell.swift in Sources */,
+				0A49BF8A22AD298E0037F9B7 /* AudioViewController.swift in Sources */,
+				0A49BF8C22AD29980037F9B7 /* BluetoothViewController.swift in Sources */,
 				0A65104022AC44B700DC68BA /* AppDelegate.swift in Sources */,
+				0A65105C22AC4BA100DC68BA /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,36 +555,40 @@
 		};
 		0A65104F22AC44B900DC68BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5E5179134BE57DA731C723 /* Pods-monly-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45FBYS239C;
-				INFOPLIST_FILE = "monly-demo/Info.plist";
+				INFOPLIST_FILE = "monly-demo/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.codefuse.monly-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0A65105022AC44B900DC68BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F517B327F6B0AC90F6AA3B8 /* Pods-monly-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45FBYS239C;
-				INFOPLIST_FILE = "monly-demo/Info.plist";
+				INFOPLIST_FILE = "monly-demo/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.codefuse.monly-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

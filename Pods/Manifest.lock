@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+  - SwiftGen (6.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0.0)
+  - Reusable (~> 4.1)
+  - SwiftGen (~> 6.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Reusable
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+
+PODFILE CHECKSUM: 72452378887fd3ec1bdb12126d436bee4c94489b
+
+COCOAPODS: 1.6.1

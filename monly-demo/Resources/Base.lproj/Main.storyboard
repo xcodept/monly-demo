@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WUH-y8-o6S">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A0w-CC-nO6">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A0w-CC-nO6" secondAttribute="bottom" id="AlN-eM-g3z"/>
+                            <constraint firstItem="A0w-CC-nO6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OEv-br-m96"/>
+                            <constraint firstItem="A0w-CC-nO6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VOj-fg-rWl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A0w-CC-nO6" secondAttribute="trailing" id="y2B-8t-wfK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Aen-90-dmO"/>
+                    <connections>
+                        <outlet property="tableView" destination="A0w-CC-nO6" id="HqO-Xn-YWQ"/>
+                        <segue destination="Xpp-Pm-O2D" kind="show" identifier="showTouchViewController" id="Qmx-Jd-Di3"/>
+                        <segue destination="71N-U0-m1b" kind="show" identifier="showBluetoothViewController" id="fCZ-Ck-FV8"/>
+                        <segue destination="biV-PG-dvV" kind="show" identifier="showCameraViewController" id="TUt-jD-9hg"/>
+                        <segue destination="2nZ-CM-KKP" kind="show" identifier="showFaceIdViewController" id="wgE-tc-V3F"/>
+                        <segue destination="HTE-5M-OPk" kind="show" identifier="showGPSViewController" id="Hfh-bS-C6F"/>
+                        <segue destination="yhX-Qt-kUr" kind="show" identifier="showAudioViewController" id="Akj-Uj-kJa"/>
+                        <segue destination="RTw-RV-4NK" kind="show" identifier="showGSMViewController" id="u3l-fj-Iu6"/>
+                        <segue destination="dCs-ra-3fN" kind="show" identifier="showGalleryViewController" id="DfS-vH-grK"/>
+                        <segue destination="pZE-Dc-no7" kind="show" identifier="showMicrophoneViewController" id="qwc-gu-YpA"/>
+                        <segue destination="YGH-Ow-6yb" kind="show" identifier="showNetworkTrafficViewController" id="PJG-16-p0M"/>
+                        <segue destination="POp-aF-0OQ" kind="show" identifier="showSensorsViewController" id="vnd-dY-VTX"/>
+                        <segue destination="1wS-g5-qpj" kind="show" identifier="showWifiViewController" id="q4S-2T-Iv9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="353"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="acw-bK-shH">
+            <objects>
+                <viewController id="biV-PG-dvV" customClass="CameraViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVQ-Kn-dl8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="z9W-1J-HKe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3L-wn-yg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="426"/>
+        </scene>
+        <!--Network Traffic View Controller-->
+        <scene sceneID="Mj6-ID-8iJ">
+            <objects>
+                <viewController id="YGH-Ow-6yb" customClass="NetworkTrafficViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PN4-ay-C3E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="soj-Ks-5dm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elm-oi-NVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889" y="426"/>
+        </scene>
+        <!--Face Id View Controller-->
+        <scene sceneID="blx-VD-Yn4">
+            <objects>
+                <viewController id="2nZ-CM-KKP" customClass="FaceIdViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2I1-Z8-1Rh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Nxe-VI-bVn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7OK-jm-dlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="1163"/>
+        </scene>
+        <!--Sensors View Controller-->
+        <scene sceneID="jsU-hz-joI">
+            <objects>
+                <viewController id="POp-aF-0OQ" customClass="SensorsViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xyr-vs-9e4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="exk-RY-ui3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OhY-PL-nfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2890" y="1162"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xxe-Fh-EaY">
+            <objects>
+                <viewController id="HTE-5M-OPk" customClass="GPSViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VXe-TA-Gwf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KLN-B6-fdo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIY-se-vf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="1889"/>
+        </scene>
+        <!--Wifi View Controller-->
+        <scene sceneID="YG7-PA-aRq">
+            <objects>
+                <viewController id="1wS-g5-qpj" customClass="WifiViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ry8-nc-0xW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Po9-5X-Vcv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QP9-0d-NXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2890" y="1889"/>
+        </scene>
+        <!--Touch View Controller-->
+        <scene sceneID="E7q-Zu-LCN">
+            <objects>
+                <viewController id="Xpp-Pm-O2D" customClass="TouchViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BLp-x5-wbG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lDs-ba-3z9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zik-eI-n3D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwS-cd-NNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887" y="-1677"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xof-WB-tAS">
+            <objects>
+                <viewController id="RTw-RV-4NK" customClass="GSMViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Xm-qL-bf7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="k8X-fd-Lg1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHh-Cx-Pfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889" y="-1677"/>
+        </scene>
+        <!--Audio View Controller-->
+        <scene sceneID="2Ul-8c-T37">
+            <objects>
+                <viewController id="yhX-Qt-kUr" customClass="AudioViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJt-BK-cst">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hmD-s5-huR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVi-eo-JNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="-981"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="CO4-ey-77M">
+            <objects>
+                <viewController id="dCs-ra-3fN" customClass="GalleryViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xf2-p3-8h5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PcQ-9k-SDa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLU-XE-pUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889" y="-981"/>
+        </scene>
+        <!--Bluetooth View Controller-->
+        <scene sceneID="gXp-Vz-i4g">
+            <objects>
+                <viewController id="71N-U0-m1b" customClass="BluetoothViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zcr-oN-1ct">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ypb-v4-Ev2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlE-5B-C10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="-305"/>
+        </scene>
+        <!--Microphone View Controller-->
+        <scene sceneID="fYx-vH-Afn">
+            <objects>
+                <viewController id="pZE-Dc-no7" customClass="MicrophoneViewController" customModule="monly_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTP-ga-OFz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YAe-pM-Auv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woS-cv-B9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889" y="-305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fqF-y1-Tep">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WUH-y8-o6S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yvh-MC-Wi1">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wej-UN-vhX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2l-zA-XPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="352"/>
+        </scene>
+    </scenes>
+</document>
