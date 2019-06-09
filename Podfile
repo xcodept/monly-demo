@@ -9,6 +9,9 @@ def pods
   # Network
   pod 'Alamofire', '~> 4.0.0'
   
+  # Sensors
+  pod 'SensingKit'
+  
   # Code Generator / Analyser
   pod 'SwiftGen', '~> 6.0'
   pod 'Reusable', '~> 4.1'

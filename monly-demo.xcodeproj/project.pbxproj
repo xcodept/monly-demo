@@ -10,7 +10,7 @@
 		0A49BF8422AD240C0037F9B7 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8122AD240C0037F9B7 /* StoryboardSegues.swift */; };
 		0A49BF8522AD240C0037F9B7 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8222AD240C0037F9B7 /* Assets.swift */; };
 		0A49BF8622AD240C0037F9B7 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8322AD240C0037F9B7 /* StoryboardScenes.swift */; };
-		0A49BF8822AD29850037F9B7 /* 3DTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8722AD29850037F9B7 /* 3DTouchViewController.swift */; };
+		0A49BF8822AD29850037F9B7 /* TouchIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8722AD29850037F9B7 /* TouchIdViewController.swift */; };
 		0A49BF8A22AD298E0037F9B7 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8922AD298E0037F9B7 /* AudioViewController.swift */; };
 		0A49BF8C22AD29980037F9B7 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8B22AD29980037F9B7 /* BluetoothViewController.swift */; };
 		0A49BF8E22AD299F0037F9B7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF8D22AD299F0037F9B7 /* CameraViewController.swift */; };
@@ -22,6 +22,9 @@
 		0A49BF9A22AD29D40037F9B7 /* NetworkTrafficViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9922AD29D40037F9B7 /* NetworkTrafficViewController.swift */; };
 		0A49BF9C22AD29DD0037F9B7 /* SensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9B22AD29DD0037F9B7 /* SensorsViewController.swift */; };
 		0A49BF9E22AD29E90037F9B7 /* WifiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9D22AD29E90037F9B7 /* WifiViewController.swift */; };
+		0A49BFA022AD3B7E0037F9B7 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9F22AD3B7E0037F9B7 /* BorderButton.swift */; };
+		0A49BFA422AD3D800037F9B7 /* audio-demo-wav.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0A49BFA222AD3D800037F9B7 /* audio-demo-wav.wav */; };
+		0A49BFA522AD3D800037F9B7 /* audio-demo-mp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A49BFA322AD3D800037F9B7 /* audio-demo-mp.mp3 */; };
 		0A65104022AC44B700DC68BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65103F22AC44B700DC68BA /* AppDelegate.swift */; };
 		0A65104522AC44B700DC68BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A65104322AC44B700DC68BA /* Main.storyboard */; };
 		0A65104722AC44B900DC68BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A65104622AC44B900DC68BA /* Assets.xcassets */; };
@@ -38,7 +41,7 @@
 		0A49BF8122AD240C0037F9B7 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
 		0A49BF8222AD240C0037F9B7 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		0A49BF8322AD240C0037F9B7 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
-		0A49BF8722AD29850037F9B7 /* 3DTouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DTouchViewController.swift; sourceTree = "<group>"; };
+		0A49BF8722AD29850037F9B7 /* TouchIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIdViewController.swift; sourceTree = "<group>"; };
 		0A49BF8922AD298E0037F9B7 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		0A49BF8B22AD29980037F9B7 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
 		0A49BF8D22AD299F0037F9B7 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +53,9 @@
 		0A49BF9922AD29D40037F9B7 /* NetworkTrafficViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTrafficViewController.swift; sourceTree = "<group>"; };
 		0A49BF9B22AD29DD0037F9B7 /* SensorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsViewController.swift; sourceTree = "<group>"; };
 		0A49BF9D22AD29E90037F9B7 /* WifiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiViewController.swift; sourceTree = "<group>"; };
+		0A49BF9F22AD3B7E0037F9B7 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		0A49BFA222AD3D800037F9B7 /* audio-demo-wav.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio-demo-wav.wav"; sourceTree = "<group>"; };
+		0A49BFA322AD3D800037F9B7 /* audio-demo-mp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "audio-demo-mp.mp3"; sourceTree = "<group>"; };
 		0A65103C22AC44B700DC68BA /* monly-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "monly-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A65103F22AC44B700DC68BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A65104422AC44B700DC68BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +92,15 @@
 				0A49BF8122AD240C0037F9B7 /* StoryboardSegues.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		0A49BFA122AD3D6B0037F9B7 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				0A49BFA322AD3D800037F9B7 /* audio-demo-mp.mp3 */,
+				0A49BFA222AD3D800037F9B7 /* audio-demo-wav.wav */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		0A65103322AC44B700DC68BA = {
@@ -128,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				0A49BF8022AD23F00037F9B7 /* Generated */,
+				0A49BFA122AD3D6B0037F9B7 /* Audio */,
 				0A65104322AC44B700DC68BA /* Main.storyboard */,
 				0A65104622AC44B900DC68BA /* Assets.xcassets */,
 				0A65104822AC44B900DC68BA /* LaunchScreen.storyboard */,
@@ -149,7 +165,7 @@
 			children = (
 				0A65105622AC4A7F00DC68BA /* DataSources */,
 				0A65105422AC483A00DC68BA /* MenuViewController.swift */,
-				0A49BF8722AD29850037F9B7 /* 3DTouchViewController.swift */,
+				0A49BF8722AD29850037F9B7 /* TouchIdViewController.swift */,
 				0A49BF8922AD298E0037F9B7 /* AudioViewController.swift */,
 				0A49BF8B22AD29980037F9B7 /* BluetoothViewController.swift */,
 				0A49BF8D22AD299F0037F9B7 /* CameraViewController.swift */,
@@ -228,6 +244,7 @@
 		0A65106422AC4C6000DC68BA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0A49BF9F22AD3B7E0037F9B7 /* BorderButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,8 +330,10 @@
 			files = (
 				0A65104A22AC44B900DC68BA /* LaunchScreen.storyboard in Resources */,
 				0A65106822AC4CA000DC68BA /* MenuItemTableViewCell.xib in Resources */,
+				0A49BFA422AD3D800037F9B7 /* audio-demo-wav.wav in Resources */,
 				0A65104722AC44B900DC68BA /* Assets.xcassets in Resources */,
 				0A65104522AC44B700DC68BA /* Main.storyboard in Resources */,
+				0A49BFA522AD3D800037F9B7 /* audio-demo-mp.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,13 +424,14 @@
 				0A49BF9E22AD29E90037F9B7 /* WifiViewController.swift in Sources */,
 				0A49BF8E22AD299F0037F9B7 /* CameraViewController.swift in Sources */,
 				0A49BF9422AD29BB0037F9B7 /* GSMViewController.swift in Sources */,
-				0A49BF8822AD29850037F9B7 /* 3DTouchViewController.swift in Sources */,
+				0A49BF8822AD29850037F9B7 /* TouchIdViewController.swift in Sources */,
 				0A65105522AC483A00DC68BA /* MenuViewController.swift in Sources */,
 				0A65106722AC4CA000DC68BA /* MenuItemTableViewCell.swift in Sources */,
 				0A49BF8A22AD298E0037F9B7 /* AudioViewController.swift in Sources */,
 				0A49BF8C22AD29980037F9B7 /* BluetoothViewController.swift in Sources */,
 				0A65104022AC44B700DC68BA /* AppDelegate.swift in Sources */,
 				0A65105C22AC4BA100DC68BA /* MenuItem.swift in Sources */,
+				0A49BFA022AD3B7E0037F9B7 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

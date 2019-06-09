@@ -10,6 +10,20 @@ import UIKit
 
 class AudioViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var wavButton: UIButton! {
+        didSet {
+            self.wavButton.setTitle("Play .wav", for: .normal)
+        }
+    }
+    
+    @IBOutlet weak var mp3Button: UIButton! {
+        didSet {
+            self.mp3Button.setTitle("Play .mp3", for: .normal)
+        }
+    }
+    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -34,7 +34,7 @@ class MenuViewController: UIViewController {
             MenuItem(title: "Sensors", image: Asset._004Sensors.image, segue: StoryboardSegue.Main.showSensorsViewController),
             MenuItem(title: "GSM", image: Asset._006Airdrop.image, segue: StoryboardSegue.Main.showGSMViewController),
             MenuItem(title: "Gallery", image: Asset._15Image.image, segue: StoryboardSegue.Main.showGalleryViewController),
-            MenuItem(title: "3D-Touch", image: Asset._001Fingerprint.image, segue: StoryboardSegue.Main.showTouchViewController),
+            MenuItem(title: "Touch-ID", image: Asset._001Fingerprint.image, segue: StoryboardSegue.Main.showTouchIdViewController),
             MenuItem(title: "Face-ID", image: Asset._002Face.image, segue: StoryboardSegue.Main.showFaceIdViewController)
         ]
     }()

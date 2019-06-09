@@ -23,7 +23,7 @@ internal enum StoryboardSegue {
     case showMicrophoneViewController
     case showNetworkTrafficViewController
     case showSensorsViewController
-    case showTouchViewController
+    case showTouchIdViewController
     case showWifiViewController
   }
 }
