@@ -25,6 +25,7 @@
 		0A49BFA022AD3B7E0037F9B7 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BF9F22AD3B7E0037F9B7 /* BorderButton.swift */; };
 		0A49BFA422AD3D800037F9B7 /* audio-demo-wav.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0A49BFA222AD3D800037F9B7 /* audio-demo-wav.wav */; };
 		0A49BFA522AD3D800037F9B7 /* audio-demo-mp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A49BFA322AD3D800037F9B7 /* audio-demo-mp.mp3 */; };
+		0A49BFA722AD84C20037F9B7 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A49BFA622AD84C20037F9B7 /* CameraController.swift */; };
 		0A65104022AC44B700DC68BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65103F22AC44B700DC68BA /* AppDelegate.swift */; };
 		0A65104522AC44B700DC68BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A65104322AC44B700DC68BA /* Main.storyboard */; };
 		0A65104722AC44B900DC68BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A65104622AC44B900DC68BA /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		0A49BF9F22AD3B7E0037F9B7 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		0A49BFA222AD3D800037F9B7 /* audio-demo-wav.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio-demo-wav.wav"; sourceTree = "<group>"; };
 		0A49BFA322AD3D800037F9B7 /* audio-demo-mp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "audio-demo-mp.mp3"; sourceTree = "<group>"; };
+		0A49BFA622AD84C20037F9B7 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		0A65103C22AC44B700DC68BA /* monly-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "monly-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A65103F22AC44B700DC68BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A65104422AC44B700DC68BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				0A65105722AC4A7F00DC68BA /* SideMenuDataSource.swift */,
+				0A49BFA622AD84C20037F9B7 /* CameraController.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				0A49BF9A22AD29D40037F9B7 /* NetworkTrafficViewController.swift in Sources */,
 				0A49BF9222AD29B40037F9B7 /* GPSViewController.swift in Sources */,
 				0A49BF8422AD240C0037F9B7 /* StoryboardSegues.swift in Sources */,
+				0A49BFA722AD84C20037F9B7 /* CameraController.swift in Sources */,
 				0A49BF9C22AD29DD0037F9B7 /* SensorsViewController.swift in Sources */,
 				0A65105922AC4A7F00DC68BA /* SideMenuDataSource.swift in Sources */,
 				0A49BF8622AD240C0037F9B7 /* StoryboardScenes.swift in Sources */,

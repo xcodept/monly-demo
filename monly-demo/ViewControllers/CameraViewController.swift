@@ -7,24 +7,36 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CameraViewController: UIViewController {
 
+    // MARK: - Properties
+    let cameraController = CameraController()
+    
+    // MARK: - Outlets
+    @IBOutlet fileprivate var capturePreviewView: UIView!
+    
+    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "Camera"
+        
+        func configureCameraController() {
+            self.cameraController.prepare {(error) in
+                if let error = error {
+                    print(error)
+                }
+                
+                try? self.cameraController.displayPreview(on: self.capturePreviewView)
+            }
+        }
+        
+        configureCameraController()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

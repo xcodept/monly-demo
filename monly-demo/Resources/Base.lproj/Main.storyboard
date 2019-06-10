@@ -61,9 +61,63 @@
                     <view key="view" contentMode="scaleToFill" id="gVQ-Kn-dl8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hQS-M9-6Cp">
+                                <rect key="frame" x="64" y="120" width="247" height="360"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNc-WR-0Vd">
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="247"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kNc-WR-0Vd" secondAttribute="height" multiplier="1:1" id="bse-wi-viF"/>
+                                        </constraints>
+                                    </view>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1mb-bk-6Gt">
+                                        <rect key="frame" x="0.0" y="255" width="247" height="29"/>
+                                        <segments>
+                                            <segment title="Photo"/>
+                                            <segment title="Video"/>
+                                        </segments>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="wPP-7g-EhQ">
+                                        <rect key="frame" x="0.0" y="291" width="247" height="29"/>
+                                        <segments>
+                                            <segment title="Front"/>
+                                            <segment title="Back"/>
+                                        </segments>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qz-Mg-DS3" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="327" width="247" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Ok">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hQS-M9-6Cp" firstAttribute="leading" secondItem="z9W-1J-HKe" secondAttribute="leading" constant="64" id="A98-3e-JWe"/>
+                            <constraint firstItem="hQS-M9-6Cp" firstAttribute="centerX" secondItem="gVQ-Kn-dl8" secondAttribute="centerX" id="hKb-v0-zSh"/>
+                            <constraint firstItem="hQS-M9-6Cp" firstAttribute="top" secondItem="z9W-1J-HKe" secondAttribute="top" constant="32" id="o5N-MY-hWs"/>
+                            <constraint firstItem="z9W-1J-HKe" firstAttribute="trailing" secondItem="hQS-M9-6Cp" secondAttribute="trailing" constant="64" id="rcH-2a-6GO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="z9W-1J-HKe"/>
                     </view>
+                    <connections>
+                        <outlet property="capturePreviewView" destination="kNc-WR-0Vd" id="zUy-2m-1tQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3L-wn-yg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,9 +160,176 @@
                     <view key="view" contentMode="scaleToFill" id="Xyr-vs-9e4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="JQL-aH-3cn">
+                                <rect key="frame" x="64" y="235.66666666666663" width="247" height="341"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaT-wE-oYB" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="0.0" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="accelerometerButtonDidClicked:" destination="POp-aF-0OQ" eventType="touchUpInside" id="OhZ-hD-gyl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZz-w6-fwC" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="44.000000000000028" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="altimeterButtonDidClicked:" destination="POp-aF-0OQ" eventType="touchUpInside" id="7kI-QA-0L0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCp-3U-Qh3" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="88.000000000000028" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="deviceMotionButtonDidClicked:" destination="POp-aF-0OQ" eventType="touchUpInside" id="91t-pr-FxK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnZ-td-RwJ" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="132.00000000000003" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="gyroscopeButtonDidClicked:" destination="POp-aF-0OQ" eventType="touchUpInside" id="EVE-fD-9kX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8H-9r-9Z3" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="176.00000000000003" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="headingButtonDidClicked:" destination="POp-aF-0OQ" eventType="touchUpInside" id="rwi-sl-tag"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWp-f0-l7W" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="220.00000000000003" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="magnetometerButtonDidClicked:" destination="POp-aF-0OQ" eventType="touchUpInside" id="q83-Za-sxA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obZ-HY-8Z1" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="264" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="motionActivityButtonButtonDidClicked:" destination="POp-aF-0OQ" eventType="touchUpInside" id="XdK-KF-zjb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jed-1W-2HU" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="308" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pedometerButtonDidClicked:" destination="POp-aF-0OQ" eventType="touchUpInside" id="RUM-dS-QWy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JQL-aH-3cn" firstAttribute="leading" secondItem="exk-RY-ui3" secondAttribute="leading" constant="64" id="HiG-wc-Jca"/>
+                            <constraint firstItem="exk-RY-ui3" firstAttribute="trailing" secondItem="JQL-aH-3cn" secondAttribute="trailing" constant="64" id="XZn-xM-ceY"/>
+                            <constraint firstItem="JQL-aH-3cn" firstAttribute="centerY" secondItem="Xyr-vs-9e4" secondAttribute="centerY" id="niP-hw-nRn"/>
+                            <constraint firstItem="JQL-aH-3cn" firstAttribute="centerX" secondItem="Xyr-vs-9e4" secondAttribute="centerX" id="xBw-PW-1f1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="exk-RY-ui3"/>
                     </view>
+                    <connections>
+                        <outlet property="accelerometerButton" destination="DaT-wE-oYB" id="TKm-M2-qHv"/>
+                        <outlet property="altimeterButton" destination="gZz-w6-fwC" id="Egi-wr-JSa"/>
+                        <outlet property="deviceMotionButton" destination="hCp-3U-Qh3" id="l3Z-hR-Gly"/>
+                        <outlet property="gyroscopeButton" destination="CnZ-td-RwJ" id="KfF-7b-JzO"/>
+                        <outlet property="headingButton" destination="f8H-9r-9Z3" id="vdI-AQ-AsZ"/>
+                        <outlet property="magnetometerButton" destination="XWp-f0-l7W" id="Gee-52-v71"/>
+                        <outlet property="motionActivityButton" destination="obZ-HY-8Z1" id="N5j-NV-DDC"/>
+                        <outlet property="pedometerButton" destination="jed-1W-2HU" id="AeQ-L1-nXg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OhY-PL-nfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -272,6 +493,9 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="mp3ButtonDidClicked:" destination="yhX-Qt-kUr" eventType="touchUpInside" id="dsV-Zm-cgI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5d-TW-zqs" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
                                         <rect key="frame" x="99" y="41" width="49" height="33"/>
@@ -287,6 +511,9 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="wavButtonDidClicked:" destination="yhX-Qt-kUr" eventType="touchUpInside" id="zvp-mF-MgS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -316,9 +543,62 @@
                     <view key="view" contentMode="scaleToFill" id="Xf2-p3-8h5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ft1-je-sOj">
+                                <rect key="frame" x="64" y="368.66666666666669" width="247" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCC-mY-ecc" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="0.0" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cameraButtonDidClicked:" destination="dCs-ra-3fN" eventType="touchUpInside" id="s9d-QP-fK4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmm-4m-ZOM" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="42" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="photoLibraryButtonDidClicked:" destination="dCs-ra-3fN" eventType="touchUpInside" id="AWk-XN-Up1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ft1-je-sOj" firstAttribute="centerY" secondItem="Xf2-p3-8h5" secondAttribute="centerY" id="Gn7-Cj-97q"/>
+                            <constraint firstItem="ft1-je-sOj" firstAttribute="leading" secondItem="PcQ-9k-SDa" secondAttribute="leading" constant="64" id="Lap-Em-doJ"/>
+                            <constraint firstItem="PcQ-9k-SDa" firstAttribute="trailing" secondItem="ft1-je-sOj" secondAttribute="trailing" constant="64" id="jBh-27-jqa"/>
+                            <constraint firstItem="ft1-je-sOj" firstAttribute="centerX" secondItem="Xf2-p3-8h5" secondAttribute="centerX" id="rxl-YQ-XDI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PcQ-9k-SDa"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="NCC-mY-ecc" id="fJz-fx-3fz"/>
+                        <outlet property="photoLibraryButton" destination="Wmm-4m-ZOM" id="W4T-og-ZS7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLU-XE-pUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -331,9 +611,62 @@
                     <view key="view" contentMode="scaleToFill" id="Zcr-oN-1ct">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Fg8-sI-DyZ">
+                                <rect key="frame" x="64" y="368.66666666666669" width="247" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UY-Ea-u2a" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="0.0" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="iBeaconProxmityButtonDidClicked:" destination="71N-U0-m1b" eventType="touchUpInside" id="9yd-Wb-GSo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDA-kp-3jb" customClass="BorderButton" customModule="monly_demo" customModuleProvider="target">
+                                        <rect key="frame" x="99" y="42" width="49" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="eddystoneProximityButtonDidClicked:" destination="71N-U0-m1b" eventType="touchUpInside" id="CC2-Z7-wG5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ypb-v4-Ev2" firstAttribute="trailing" secondItem="Fg8-sI-DyZ" secondAttribute="trailing" constant="64" id="A6z-v8-K2v"/>
+                            <constraint firstItem="Fg8-sI-DyZ" firstAttribute="leading" secondItem="ypb-v4-Ev2" secondAttribute="leading" constant="64" id="Mi0-gy-U8g"/>
+                            <constraint firstItem="Fg8-sI-DyZ" firstAttribute="centerY" secondItem="Zcr-oN-1ct" secondAttribute="centerY" id="YWw-6D-db7"/>
+                            <constraint firstItem="Fg8-sI-DyZ" firstAttribute="centerX" secondItem="Zcr-oN-1ct" secondAttribute="centerX" id="mYH-Ij-ZEg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ypb-v4-Ev2"/>
                     </view>
+                    <connections>
+                        <outlet property="eddystoneProximityButton" destination="dDA-kp-3jb" id="VfZ-kI-jD6"/>
+                        <outlet property="iBeaconProxmityButton" destination="3UY-Ea-u2a" id="kMJ-a4-rgK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlE-5B-C10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

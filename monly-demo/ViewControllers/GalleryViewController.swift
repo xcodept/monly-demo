@@ -10,21 +10,56 @@ import UIKit
 
 class GalleryViewController: UIViewController {
 
+    // MARK: - Properties
+    
+    // MARK: - Outlets
+    @IBOutlet weak var cameraButton: UIButton! {
+        didSet {
+            self.cameraButton.setTitle("Open Camera", for: .normal)
+        }
+    }
+    
+    @IBOutlet weak var photoLibraryButton: UIButton! {
+        didSet {
+            self.photoLibraryButton.setTitle("Open Photo Library", for: .normal)
+        }
+    }
+    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.title = "Gallery"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Methods
+    private func camera() {
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            let myPickerController = UIImagePickerController()
+//            myPickerController.delegate = self;
+            myPickerController.sourceType = .camera
+            self.present(myPickerController, animated: true, completion: nil)
+        }
+        
     }
-    */
-
+    
+    private func photoLibrary() {
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            let myPickerController = UIImagePickerController()
+//            myPickerController.delegate = self;
+            myPickerController.sourceType = .photoLibrary
+            self.present(myPickerController, animated: true, completion: nil)
+        }
+    }
+    
+    // MARK: - Action methods
+    @IBAction func cameraButtonDidClicked(_ sender: Any) {
+        self.camera()
+    }
+    
+    @IBAction func photoLibraryButtonDidClicked(_ sender: Any) {
+        self.photoLibrary()
+    }
+    
 }
