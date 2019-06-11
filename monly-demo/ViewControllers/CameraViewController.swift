@@ -16,7 +16,13 @@ class CameraViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet fileprivate var capturePreviewView: UIView!
-    
+    @IBOutlet weak var refreshButton: BorderButton! {
+        didSet {
+            self.refreshButton.setTitle("Ok", for: .normal)
+        }
+    }
+    @IBOutlet weak var segmentedControl1: UISegmentedControl!
+    @IBOutlet weak var segmentedControl2: UISegmentedControl!
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -37,6 +43,22 @@ class CameraViewController: UIViewController {
         configureCameraController()
     }
     
-    
-
+    // MARK: - Actions
+    @IBAction func refreshButtonDidClicked(_ sender: Any) {
+        
+        switch self.segmentedControl1.selectedSegmentIndex {
+        case 0:
+            break
+        default:
+            break
+        }
+        
+        //
+        switch self.segmentedControl2.selectedSegmentIndex {
+        case 0:
+            try? self.cameraController.switchToFrontCamera()
+        default:
+            try? self.cameraController.switchToRearCamera()
+        }
+    }
 }

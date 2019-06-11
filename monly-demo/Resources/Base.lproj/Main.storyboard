@@ -102,6 +102,9 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="refreshButtonDidClicked:" destination="biV-PG-dvV" eventType="touchUpInside" id="pSl-uX-cqh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -117,6 +120,9 @@
                     </view>
                     <connections>
                         <outlet property="capturePreviewView" destination="kNc-WR-0Vd" id="zUy-2m-1tQ"/>
+                        <outlet property="refreshButton" destination="4qz-Mg-DS3" id="nQ9-Tb-j6g"/>
+                        <outlet property="segmentedControl1" destination="1mb-bk-6Gt" id="b9u-88-DY9"/>
+                        <outlet property="segmentedControl2" destination="wPP-7g-EhQ" id="jDY-C7-zB0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3L-wn-yg6" userLabel="First Responder" sceneMemberID="firstResponder"/>

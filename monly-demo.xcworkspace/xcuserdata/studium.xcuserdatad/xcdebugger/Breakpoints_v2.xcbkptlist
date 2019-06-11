@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "monly-demo/ViewControllers/CameraViewController.swift"
+            timestampString = "581858849.321298"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "monly_demo.CameraViewController.refreshButtonDidClicked(Any) -&gt; ()"
+                  moduleName = "monly-demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/studium/Documents/_master-2.0/_codeproject-ios/monly-demo/monly-demo/ViewControllers/CameraViewController.swift"
+                  timestampString = "581858162.835783"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "monly_demo.CameraViewController.refreshButtonDidClicked(Any) -&gt; ()"
+                  moduleName = "monly-demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/studium/Documents/_master-2.0/_codeproject-ios/monly-demo/monly-demo/ViewControllers/CameraViewController.swift"
+                  timestampString = "581858162.8385611"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
